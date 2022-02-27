@@ -7,7 +7,6 @@
     "access": "public"
   },
   "scripts": {
-    "postinstall": "pwd; cat Makefile; make build",
     "build": "make build",
     "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
@@ -25,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edx/frontend-component-header.git"
+    "url": "git+https://github.com/ARMBouhali/frontend-component-header.git"
   },
   "author": "edX",
   "license": "AGPL-3.0",

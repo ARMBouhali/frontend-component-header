@@ -36,8 +36,23 @@ function Header({ intl }) {
   const mainMenu = [
     {
       type: 'item',
-      href: `${config.LMS_BASE_URL}/dashboard`,
-      content: intl.formatMessage(messages['header.links.courses']),
+      href: `${config.LMS_BASE_URL}`,
+      content: intl.formatMessage(messages['header.links.home']),
+    },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/courses`,
+      content: intl.formatMessage(messages['header.links.content.search']),
+    },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/about`,
+      content: intl.formatMessage(messages['header.links.about']),
+    },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/support/contact_us`,
+      content: intl.formatMessage(messages['header.links.contact']),
     },
   ];
 
@@ -91,7 +106,7 @@ function Header({ intl }) {
   const props = {
     logo: config.LOGO_URL,
     logoAltText: config.SITE_NAME,
-    logoDestination: `${config.LMS_BASE_URL}/dashboard`,
+    logoDestination: `${config.LMS_BASE_URL}`,
     loggedIn: authenticatedUser !== null,
     username: authenticatedUser !== null ? authenticatedUser.username : null,
     avatar: authenticatedUser !== null ? authenticatedUser.avatar : null,

@@ -1,9 +1,14 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
 
 const messages = defineMessages({
+  'header.links.home': {
+    id: 'header.links.home',
+    defaultMessage: 'Home',
+    description: 'Link to the home page',
+  },
   'header.links.courses': {
     id: 'header.links.courses',
-    defaultMessage: 'Courses',
+    defaultMessage: 'My Courses',
     description: 'Link to the learner course dashboard',
   },
   'header.links.programs': {
@@ -13,7 +18,7 @@ const messages = defineMessages({
   },
   'header.links.content.search': {
     id: 'header.links.content.search',
-    defaultMessage: 'Discover New',
+    defaultMessage: 'Courses',
     description: 'Link to the content search page',
   },
   'header.links.schools': {
@@ -21,9 +26,19 @@ const messages = defineMessages({
     defaultMessage: 'Schools & Partners',
     description: 'Link to the schools and partners landing page',
   },
+  'header.links.about': {
+    id: 'header.links.about',
+    defaultMessage: 'About',
+    description: 'Link to the platform\' about page',
+  },
+  'header.links.contact': {
+    id: 'header.links.contact',
+    defaultMessage: 'Contact',
+    description: 'Link to the contact us page',
+  },
   'header.user.menu.dashboard': {
     id: 'header.user.menu.dashboard',
-    defaultMessage: 'Dashboard',
+    defaultMessage: 'My Courses',
     description: 'Link to the user dashboard',
   },
   'header.user.menu.profile': {
